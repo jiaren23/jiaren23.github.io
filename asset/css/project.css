@@ -5,6 +5,8 @@
   font-family: 'Noto Serif TC', serif;
   box-sizing: border-box;
   text-align: center;
+  line-height: 1.6;
+  letter-spacing: 0.1em;
 }
   a{
     color:rgb(116, 108, 108) !important;
@@ -56,13 +58,12 @@
     
   }
   
-  
+  .footer h4{
+    margin: 50px auto 15px;
+    font-size: 14px;
 
- 
-    .footer{
-      margin:50px auto 15px
-  }
-  
+}
+
  
   
   @media screen and (min-width:768px){
@@ -173,8 +174,8 @@
 
   @media screen and (max-width: 960px){
     section {
-      padding-left: 10px;
-      padding-right: 10px;
+      padding-left: 15px;
+      padding-right: 15px;
     }
     .yt{
       max-width: 100%;

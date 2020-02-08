@@ -33,6 +33,25 @@
             border: solid 1px #ddd;
             padding: 10px;
           }
+          /* contact arrow */
+          .btn .arrow{
+              animation: arrow 2s infinite;
+          }
+          @keyframes arrow{
+              0%{
+                  opacity: 0.5;
+                  
+              }
+              50%{
+                  opacity: 1;
+                  left: 5px;
+              }
+              100%{
+                  opacity: 0.5;
+                
+              }
+          }
+
           @media screen and (max-width:768) {
             .touch{
               padding-left: 10px;
@@ -74,7 +93,7 @@
   <section class="touch">
     <br><br>
     <h3>Call Me</h3><br>
-    <a href="tel:0972 991 369"><span class="arrow">➥</span>&nbsp; 0972 991 369</a></h3>
+    <a href="tel:0972 991 369"> <div class="btn"><span class="arrow">➥</span></div> 0972 991 369&nbsp;&nbsp;&nbsp;&nbsp;</a></h3>
     <br><br>
     <br>
     <h3>E-mail</h3>
@@ -87,6 +106,7 @@
         </div>
         <div class="input-mes">
             <input id="telText"type="tel" name="Phone"  value size="60" aria-invalid="false" placeholder="電話(phone)" required>
+            </div>
         <div class="input-mes">
             <input  id="subText" type="text" name="Subject"  value size="60" aria-invalid="false" placeholder="主旨(subject)" required>
         </div>

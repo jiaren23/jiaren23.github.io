@@ -3,12 +3,16 @@
     list-style: none;
     text-decoration: none;
     font-family: 'Noto Serif TC', serif;
-    /* border:1px solid; */
+  
 }
 a{
     color:rgb(116, 108, 108) !important;
 }
 
+nav{
+    line-height: 1.6;
+    letter-spacing: 0.1em;
+}
 
 /* 螢幕大於576*/
 @media (min-width:576px){

@@ -4,6 +4,8 @@
     text-decoration: none;
     font-family: 'Noto Serif TC', serif;
     box-sizing: border-box;
+    line-height: 1.6;
+    letter-spacing: 0.1em;
 }
 a{
     color:rgb(116, 108, 108) !important;
@@ -16,6 +18,7 @@ a{
     padding-right: 0;
     padding-left: 0;
     text-align: center;
+    font-size: 16px;
 }
 img{
     width: 100%;
@@ -28,33 +31,36 @@ img{
     margin: 20px 8px;
     margin: 5px 8px;
 }
-.intr{
-    margin: 20px auto 40px;
-    text-align: center;
-}
-.intr a{
-    border: solid 1px #666;
-    border-radius: 5px;
-    padding: 5px;
-   
-}
 
 .skill-h3{
     text-align: center;
+    margin-bottom:20px;
 }
+
+
 .experience-group{
     margin-top: 10px;
 }
 
 .experience{
     text-align: center;
+    margin-bottom:20px ;
 }
 .exp-content h5{
     color:#948073;
 }
+.exp-date{
+    font-weight: 500;
+}
 .footer{
     text-align: center;
 }
+.footer h4{
+    margin: 50px auto 15px;
+    font-size: 14px;
+
+}
+
 
 @media screen and (min-width:768px){
     .exp-date{
@@ -81,8 +87,8 @@ img{
 
 @media screen and (max-width: 960px){
     section {
-      padding-left: 10px;
-      padding-right: 10px;
+      padding-left: 15px;
+      padding-right: 15px;
     }
   }
 
