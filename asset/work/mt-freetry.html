@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        
+    *{
+        margin: 0;
+        padding: 0;
+        font-family:"微軟正黑體";
+        line-height: 1.6;
+    }
+    .all{
+        width: 100%;
+        position: relative;   
+    }
+    .head{
+        width: 100%;
+        height: 50px;
+        background-color: #0054b3;
+        position: relative;     
+    }
+    .head .tittle{
+        position: absolute;
+        top:10%;
+        transform:translateY(-50%);
+        left: 50%;
+        transform:translateX(-50%);   
+    }
+    .head .logo{
+        position: absolute;
+        top:40%;
+        transform:translateY(-50%);
+        left: 50%;
+        transform:translateX(-50%); 
+        width: 200px;
+    }
+    .orange{
+        width: 100%;
+        height: 10px;
+        background-color: #ffa200;
+    }
+    .talk .name{
+        color: #0033cc;
+    }
+    .talk .tag{
+        font-weight: 900;
+        color: #498cc9;
+    }
+    .content-group{
+        margin-top: 10px;
+        padding: 10px;
+    }
+    .content-group h1{
+        font-size: 1.17em;
+    }
+    .id-blue{
+        color: #0033cc;
+    }
+    img{
+        width: 100%;
+    }
+    h2{
+        font-size: 18px;
+    }
+    .contact h2{
+        color:black;
+    }
+    .qr{
+        display: flex;
+    }
+    .client{
+        display: flex;
+    }
+    .client img{
+        width: 30%;   
+    }
+    .client p{
+        width:60%;   
+    }
+    .client p{
+        display: flex;
+        flex-direction: column;  
+        justify-content: center;
+        text-align: center;
+    }
+    .client img{
+        width:60%;
+        height: 60%;
+    }
+    h2{
+        color:#ffa200;
+    }
+    .footer-logo,.footer-tittle,.footer-address{
+        margin: auto;
+        width: 70%;  
+    }
+    a{
+        text-decoration: none;
+        color: #0033cc;
+    }
+    a:hover{
+        color: #0099ff;
+    }
+    hr{
+        border:solid 1px #ddd;
+        background-color: #ddd;
+    }
+@media screen and (min-width:768px){
+    .all{
+        width: 600px;
+        margin: auto;
+        border: solid 2px #ddd ;
+    }
+    .head{
+        width: 600px;
+    }
+    .head .tittle{
+        position: absolute;
+        top:50%;
+        transform:translateY(-50%);
+        left:10px;
+    }
+    .head .logo{
+        position: absolute;
+        top:50%;
+        transform:translateY(-50%);
+        left: 385px;
+        width: 200px;
+    }
+    .content-group{
+        padding:0 20px;
+    }
+    .client1,.client2{  
+        display:flex;
+    }
+    .client{
+        margin: auto;
+        display: block;
+    }
+    .client img{
+        width:60px;
+    }
+    .client img,.client p{
+        width: 100%;   
+    }
+    .footer{
+        display: flex;
+        flex-wrap:wrap;      
+    }
+    .footer-logo{
+        width: 200px;
+    }
+    .footer-tittle{
+        margin-top: 0;
+        width: 320px;
+    }
+    .footer-address{   
+        display: flex;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="all">
+
+        <!-- tiitle + logo  -->
+        <div class="head">
+            <div class="tittle" style="color:white;font-weight: 900;">試用平台帳號密碼通知</div>
+            <div class="logo"><a href="http://www.mt.com.tw/products/"><img src="http://www.mt.com.tw/wp-content/uploads/logo_ezteamwork.gif" alt="ezteamwork 企業協同管理平台"></a></div>
+        </div>
+        <div class="orange"></div>
+
+        <!-- content group -->
+        <div class="content-group">
+
+            <!-- talk -->
+            <div class="talk"><br>
+                <h1>Dear <span class="name">何宗政</span> 先生</h1><br>
+                <p>​感謝您​​申請 <span class="tag">ezteamwork™ 企業協同管理平台</span>試用！知悉您想體驗的部分為<span class="tag">專案管理</span>及<span class="tag">適合提供給主管的Overview部分</span>，為幫助您快速可見，可以參閱下列簡單說明。</p><br><br>
+            </div>
+
+            <!-- content -->
+            <div class="content">
+                <h2>「開始使用」</h2>
+                <p>點選功能選單即可開始管理工作，如需設定企業稽核流程及更多系統個人化設定也可參考右上設定選項。</p><br>
+                <img src="http://www.mt.com.tw/wp-content/uploads/trial_mail_tip_1.png">
+            </div><br>
+            <div class="content">
+                    <h2>「總覽」</h2>
+                    <p>清楚列出公司進行中的專案現況和待辦工作、今日行程，可便於快速掌握專案進度、人員及企業活動行程。</p><br>
+                    <img src="http://www.mt.com.tw/wp-content/uploads/trial_mail_tip_2.png">
+            </div><br>
+            <div class="content">
+                    <h2>「統計圖表」</h2>
+                    <p>可藉由產出跨專案及議題追蹤等彙整報表，協助主管迅速掌握專案、議題及待辦處理情況。</p><br>
+                    <img src="http://www.mt.com.tw/wp-content/uploads/trial_mail_tip_3.png">
+            </div><br>
+            <div class="content">
+                    <h2>「專案管理」</h2>
+                    <p>中提供簡單報表及儀表板，可產出工作進度、文件狀態、里程碑變化趨勢、專案進度 S-Curve等資訊呈現。</p><br>
+                    <img src="http://www.mt.com.tw/wp-content/uploads/trial_mail_tip_5.png">
+            </div><br>
+
+            <hr><br>
+
+            <!-- User introduction -->
+            <div class="user">
+                <h2>以下是您的使用者ID與密碼：</h2>
+                <div class="id">試用平台：<a href="http://demo1.trial.ezteamwork.com/">http://demo1.trial.ezteamwork.com/</a><br>
+                        使用者ID：<span class="id-blue">pm104</span><br> 
+                        密　　碼：<span class="id-blue">22431188</span><br>
+                        試用期限：<span class="id-blue">2019 / 02 / 27至2019 / 03 / 27</span><br>
+                        同步體驗 ePM™ App 行動模組：<br>
+                </div>
+                <div class="qrcode" style="padding-left:30px;margin-top:10px ;">1.手機掃瞄 QR Code，下載 ePM™ App<br>
+                        2.填入伺服器網址：<a href="http://demo1.trial.ezteamwork.com/">demo1.trial.ezteamwork.com</a><br>
+                        3.使用者 ID、密碼同電腦版試用平台<br>
+                        <div class="qr">
+                                <div class="android" style="text-align:center"><img src="http://www.mt.com.tw/wp-content/uploads/QRCode_ePM_App_download.jpg" style="width: 80px;"><br><a href="https://play.google.com/store/apps/details?id=com.mt.ezwork">Android</a></div>
+                                <div class="ios" style="text-align:center"><img src="http://www.mt.com.tw/wp-content/uploads/iOS.jpg" style="width: 80px;"><br><a href="https://itunes.apple.com/tw/app/epm/id993581195?mt=8">ios</a></div>
+                        </div>            
+                </div><br>
+            </div>
+
+            <hr><br>
+
+            <!-- contact -->
+            <div class="contact">
+                <h2>系統使用過程有任何疑問，歡迎您隨時與我及孟華客服單位聯繫。<br>
+                        服務專線：(07)727-9337#128​ 蘇昭仁 (Joseph)<br>
+                        　　　　　(07)727-9337#134​ 張凱雯 (Kaiwen)<br>
+                        客服信箱：service@mt.com.tw
+                </h2>
+            </div><br>
+
+            <hr><br>
+
+            <!-- attation -->
+            <div class="attation">
+                <h4>█ 注意事項：</h4>
+                <p>1.試用平台僅供測試評估系統功能之用，請勿放置任何正式或機密的資料及文件。<br>
+                   2.試用平台功能或範本資料會視需要 ( 如: 軟體功能升級 ) 不定期的更新，更新前會以 Email 通知，請留意。<br>
+                   3.孟華科技對於試用平台上所建置的測試資料或上傳的文件，不負任何保管責任。</p>
+            </div><br>
+
+            <hr><br>
+
+            <!-- client -->
+            <h4>█ 看看其他企業如何運用 ezteamwork™ 協同管理系列產品</h4><br>
+            <div class="client-group">
+
+                <div class="client1">
+                    <div class="client">
+                            <img src="http://www.mt.com.tw/wp-content/uploads/customer_ase-12.png" alt="日月光集團研發中心" title="日月光集團 研發中心">
+                            <p><a href="http://www.mt.com.tw/casestudies/ase/">日月光集團<br>研發中心</a></p>
+                    </div>
+                    <div class="client">
+                            <img src="http://www.mt.com.tw/wp-content/uploads/customer_apacer-17.png" alt="Apacer 宇瞻科技" title="Apacer 宇瞻科技">
+                            <p><a href="http://www.mt.com.tw/casestudies/apacer/">Apacer<br>宇瞻科技</a></p>
+                    </div>
+                    <div class="client">
+                            <img src="http://www.mt.com.tw/wp-content/uploads/customer_ecotek-15.png" alt="中鋼集團 中宇環保工程" title="中鋼集團 中宇環保工程">
+                            <p><a href="http://www.mt.com.tw/casestudies/cec/">中鋼集團<br>中宇環保工程</a></p>
+                    </div>
+                    <div class="client">
+                            <img src="http://www.mt.com.tw/wp-content/uploads/customer_lion-13.png" alt="雄獅旅遊集團" title="雄獅旅遊集團">
+                            <p><a href="http://www.mt.com.tw/casestudies/lion/">雄獅<br>旅遊集團</a></p>             
+                    </div>
+                </div>
+
+                <div class="client2">
+                    <div class="client">
+                            <img src="http://www.mt.com.tw/wp-content/uploads/customer_taiwan-mobile-14.png" alt="台灣大哥大" title="台灣大哥大">
+                            <p><a href="http://www.mt.com.tw/casestudies/taiwanmobile/">台灣大哥大</a></p>
+                    </div>
+                    <div class="client">
+                            <img src="http://www.mt.com.tw/wp-content/uploads/customer_acepoint-18.png" alt="友達光電事業夥伴─進金生能源服務" title="進金生能源服務">
+                            <p><a href="http://www.mt.com.tw/casestudies/acmepoint/">進金生<br>能源服務</a></p>
+                    </div>
+                    <div class="client">
+                            <img src="http://www.mt.com.tw/wp-content/uploads/customer_idb-21.png" alt="經濟部工業局" title="經濟部工業局">
+                            <p><a href="http://www.mt.com.tw/casestudies/idb/">經濟部<br>工業局</a></p>
+                    </div>
+                    <div class="client">
+                            <img src="http://www.mt.com.tw/wp-content/uploads/customer_hamagawa-16.png" alt="濱川企業" title="濱川企業">
+                            <p><a href="http://www.mt.com.tw/casestudies/hamagawa/">濱川企業</a></p>
+                    </div>
+                </div><br>
+            </div>
+
+            <hr><br>
+
+            <!-- footer -->
+            <div class="footer">
+                <div class="footer-logo"><img src="http://www.mt.com.tw/images/mt_logo.png"></div>
+                <div class="footer-tittle"><img src="http://www.mt.com.tw/wp-content/uploads/mt_name.png"></div>
+                <div class="footer-address">
+                    <div class="mt"><a href="http://www.mt.com.tw/"><img src="http://www.mt.com.tw/wp-content/uploads/website.png" alt="前往孟華官網" title="前往孟華官網"></a></div>
+                    <div class="fb"><a href="https://www.facebook.com/EZteamwork"><img src="http://www.mt.com.tw/wp-content/uploads/FB.png"></a></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

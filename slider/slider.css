@@ -1,0 +1,221 @@
+/* Global */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  html,body{
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+  }
+
+
+  .inner p{
+    font-size: 12px;
+  }
+
+  .container {
+    max-width: 720px;
+    height: 540px;
+    margin: auto;
+    padding: 0;
+    /* Font styles */
+    /* font-family: 'Roboto Slab', serif; */
+    /* font-size: 1em;
+    line-height: 1.5em; */
+    /* color: #607D8B; */
+    letter-spacing: .01em;
+  }
+  
+  .container {
+    position: relative;
+    margin-bottom: 40px;
+  }
+  
+  /* Panels */
+  .swipe {
+    position: relative;
+    width: 100%;
+    height: 100%; /* "min-height" doesn't work on Firefox. */
+    background: #eee;
+    /* overflow-x: hidden; */
+    overflow: hidden;
+}
+  
+  .panel {
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    padding: 20px;
+  }
+  
+  .left {
+    left: -100%;
+  }
+  
+  .right {
+    left: 100%;
+  }
+  
+  /* Info */
+  .info {
+    position: absolute;
+    width: 80%;
+    max-width: 400px;
+    bottom: 8%;
+    right: 5%;
+    pointer-events: none;
+
+  }
+  
+  .inner {
+    position: relative;
+    /* padding: 1.66em 3em; */
+    padding: 12px;
+    background: #FFFFFF;
+    opacity:.8;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+  
+  /* .info:before {
+    content: "";
+    position: absolute;
+    width: 65%;
+    height: 80%;
+    top: 0;
+    left: 0;
+    -webkit-transform: translate(-10px, -10px);
+    -ms-transform: translate(-10px, -10px);
+    -o-transform: translate(-10px, -10px);
+    transform: translate(-10px, -10px);
+    background: #E91E63;
+    background: #3F51B5;
+    opacity:.6;
+  } */
+  
+  .buttons {
+    position: absolute;
+    bottom: -30px;
+    right: 5%;
+    pointer-events: all;
+  }
+  
+  .buttons button {
+    transition: ease .4s;
+  }
+  
+  /* .btn-prev,
+  .btn-next {
+    width: 60px;
+    height: 60px;
+    margin-left: 10px;
+    border: none;
+    outline: none;
+    border-radius: 60px;
+    color: #FFFFFF;
+    background: -webkit-linear-gradient(top, #F5515F, #E91E63);
+    background: linear-gradient(to bottom, #F5515F, #E91E63);
+    box-shadow: 0px 3px 15px 2px rgba(245,81,95,.8);
+    cursor: pointer;
+  }
+  
+  .buttons button:hover {
+    box-shadow: 0px 3px 30px 3px rgba(245,81,95,.8);
+  }
+  
+  .buttons button:disabled {
+    box-shadow: 0px 1px 5px 0px rgba(245,81,95,.8);
+    background: -webkit-linear-gradient(top, #E91E63, #F5515F);
+    background: linear-gradient(to bottom, #E91E63, #F5515F);
+    cursor: default;
+  } */
+
+  .btn-prev,
+  .btn-next {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    border: none;
+    outline: none;
+    border-radius: 60px;
+    color: rgb(146, 138, 138);
+    background: -webkit-linear-gradient(top, rgb(166, 245, 255), #b9cced);
+    background: linear-gradient(to bottom, rgb(166, 245, 255), #b9cced);
+    box-shadow: 0px 3px 15px 2px rgba(224, 224, 224, 0.8);
+    cursor: pointer;
+    color:rgb(42, 83, 107);
+  }
+  
+  .buttons button:hover {
+    box-shadow: 0px 3px 30px 3px #00a8cc;
+  }
+  
+  .buttons button:disabled {
+    box-shadow: 0px 1px 5px 0px rgba(221, 221, 221, 0.8);
+    background: -webkit-linear-gradient(top, #b9cced, rgb(166, 245, 255));
+    background: linear-gradient(to bottom, #b9cced, rgb(166, 245, 255));
+    cursor: default;
+  }
+
+
+
+
+  
+  
+  /* Optional content */
+  .optional {
+    width: 80%;
+    max-width: 680px;
+    margin: 6em auto;
+    padding: 2em 3em;
+    box-shadow: 
+      0 3px 12px rgba(0,0,0,0.16), 
+      0 3px 12px rgba(0,0,0,0.23);
+  }
+  
+  @media (max-width: 620px) {
+    body {
+      font-size: 13px;
+      line-height: 1.5em;
+    }
+    .info {
+      position: absolute;
+      width: 100%;
+      max-width: 100%;
+      bottom: 0;
+      right: 0;
+    }
+  
+    .inner {
+      padding: .5em 1.5em;
+      box-shadow: none;
+      opacity:inherit;
+    }
+    
+    .buttons {
+      display: none;
+    }
+
+    .container{
+      text-align: center;
+      height: 50%;
+    }
+    .inner p{
+      font-size: initial;
+    }
+    p{
+      font-size: initial;
+    }
+  
+  }
+
+  

@@ -1,0 +1,466 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<title>無標題文件</title>
+
+<style type="text/css">
+* {
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  margin: 0;
+  font-family: '微軟正黑體';
+  color: #333;
+  font-size: 18px;
+  line-height: 20px;
+}
+	
+	
+
+.nav-top-section {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+	
+
+.nav-bottom-section {
+    background-color: #009FAD;
+
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+	
+@media (min-width: 993px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+section {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+footer {
+    background-color: #161A25;
+	position: relative;
+	left: 0;
+    bottom: 0;
+	padding: 40px 0px;
+    width: 100%;
+	color: #fff;
+	
+}
+
+.logo {
+	width:200px;
+	}
+.sub-menu {
+    float: right;
+    margin-top: 10px;
+}
+
+	.sub-menu ul {
+		list-style-type: none;
+		margin: 0;
+		padding-top: 10px;
+		float: left;
+	}
+	
+	.sub-menu ul li {
+		float: left;
+		margin-right: 8px;
+	}
+	
+	.sub-menu ul li a{
+		display: block;
+		text-align: center;
+		padding-right:12px;
+		text-decoration: none;
+	}
+
+	.main-menu {
+		
+		overflow: hidden;
+		
+	}
+
+	.main-menu a{
+		display: block;
+		text-align: center;
+		padding:20px 20px;
+		color: #fff;
+		text-decoration: none;
+		float: right;
+	}
+	.main-menu a:hover{
+		color: #009FAD;
+		background-color: #eee;
+	}
+	
+	.main-menu .icon {
+  		display: none;
+	}
+
+	
+@media screen and (max-width: 600px) {
+  .main-menu a:not(:first-child) {display: none;}
+  .main-menu a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main-menu.responsive {position: relative;}
+  .main-menu.responsive .icon {
+	position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .main-menu.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+	
+@media screen and (max-width: 600px) {
+  .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12  {
+  width: 100%;}
+}
+	
+[class*="col-"] {
+  float: left;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+	.paddingRight30{padding-right: 30px;}
+	.paddingLeft30{padding-left: 30px;}
+
+@media screen and (max-width: 600px) {
+	.paddingRight30 {padding-right: 0px;}
+	.paddingLeft30{padding-left: 0px;}
+}
+	
+	
+table {
+	border-collapse: collapse;
+	width: 100%;}	
+
+table td, table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  vertical-align: text-bottom;
+}
+
+	
+table tr:nth-child(even){background-color: #f2f2f2;}
+
+table tr:hover {background-color: #ddd;}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #00689B;
+  color: white;
+}
+
+table ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+table ul li{
+	line-height: 2;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 16px;
+	font-family: 微軟正黑體;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid #00689B;
+  border-radius: 5px;
+  
+}
+	
+input[type=button] {
+  width: 100%;
+  background-color: #00689B;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0px;
+  border: 2px solid #00689B;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 微軟正黑體;
+	font-size: 16px;
+}
+
+input[type=button]:hover {
+  border: 2px solid #66A4C3;
+  background-color: #66A4C3;
+}
+</style>
+</head>
+
+<body>
+<header>
+  <div class="nav-top-section">
+    <div class="container"> 
+		<div class="row">
+		<div class="col-4"><img class="logo" src="https://picsum.photos/200/50" width="100%"></div>
+  	    <div class="col-8"> 
+		<div class="sub-menu"> 
+	  	<ul>
+		  <li><input type="button" value="大" onClick="SizeToLarge()"></li>
+		  <li><input type="button" value="中" onClick="SizeToNormal()"></li>
+		  <li><input type="button" value="小" onClick="SizeToSmall()"></li>
+		  
+		  <li><a href="#"><img src="https://picsum.photos/40/40" alt="" width="36"/></a></li>
+		  <li><a href="#"><img src="https://picsum.photos/40/40" alt="" width="36"/></a></li>
+		  <li><a href="#"><img src="https://picsum.photos/40/40" alt="" width="36"/></a></li>
+		  </ul>
+		</div>
+		</div>
+		</div>
+	</div>
+	</div>
+  <div class="nav-bottom-section"> 
+		<div class="container"> 
+			<div class="row">
+			
+	  		<div class="main-menu" id="mainMenu">
+				
+				<a href="#">最新水質數據</a>
+				<a href="#">歷年水質變化</a>
+				<a href="#">監測計畫說明</a>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+   					 <i class="fa fa-bars"></i></a>
+				
+			</div>	
+			
+
+	  </div>
+	</div> 
+</header>
+<section class="container"> 
+		<div class="row">
+	 		<div class="paddingRight30 col-6 "><img src="https://picsum.photos/540/500" width="100%" alt=""/></div>
+	 		<div class=" paddingLeft30 col-6">
+			<form>
+				<h3>監測地點</h3>
+			  <select id="monitorLocation" name="monitorLocation">
+     				 <option value="R1">啞口坑溪-滯11蝕溝排入點上游200m(R1)</option>
+      				 <option value="R2">啞口坑溪-滯11蝕溝排入匯流點(R2)</option>
+     				 <option value="R3">啞口坑溪-桃園市與新北市交界處(R3)</option>
+    			  </select>
+				<h3>監測時間</h3>
+				<p></p>
+			<div class="col-6">
+			  <select id="monitorTime" name="monitorTime">
+				<option value="" disabled selected>Choose your option</option>
+    			<option value="1">Option 1</option>
+    			<option value="2">Option 2</option>
+    			<option value="3">Option 3</option>
+				</select>
+			</div>	
+			<div class="col-1">&nbsp; </div>
+			<div class="col-5">
+				<input type="button" value="送出">
+			</div>	
+			</form>
+		  </div>
+			</div>
+	</section>
+	
+	<section class="container ">
+		<div class="row">
+		<div class="col-12">
+		
+		<table>
+  <tbody>
+    <tr>
+      <th>項目</th>
+      <th>檢驗結果</th>
+      <th>檢驗方法</th>
+      <th>方法說明</th>
+    </tr>
+    <tr>
+      <td>流量</td>
+	  <td>&nbsp;</td>
+      <td>
+		  <ul>
+		  	<li>NIEA W210.58A	103℃～105℃乾燥</li>
+			<li>NIEA W211.50C	自動監測設施法</li>
+		  </ul>
+
+</td>
+      <td>
+		 <ul>
+		  	<li>103℃～105℃乾燥</li>
+			<li>自動監測設施法</li>
+		  </ul>
+	</td>
+     
+    </tr>
+    <tr>
+      <td>水溫</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>酸鹼值</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>導電度</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>懸浮固體</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>生化需氧量</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>氨氮</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>12345</td>
+    </tr>
+	<tr>
+      <td>總氮 </td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>12345</td>
+    </tr>
+	  <tr>
+      <td>硝酸鹽氮</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>12345</td>
+    </tr>
+	  <tr>
+      <td>溶氧</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>12345</td>
+    </tr>
+	  <tr>
+      <td>總磷</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>12345</td>
+    </tr>
+	  <tr>
+      <td>大腸桿菌群</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>12345</td>
+    </tr>
+	  <tr>
+      <td>油脂</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>12345</td>
+    </tr>
+	  <tr>
+      <td>陰離子界面活性劑</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>12345</td>
+    </tr>
+	
+	  
+  </tbody>
+</table>
+    </div>
+		</div>
+	</section>
+<footer> 
+	<div class="container"> 
+	
+	<p>地址：10042臺北市中正區中華路一段83號</p>
+	</div>
+</footer>
+ 
+<script>
+function myFunction() {
+  var x = document.getElementById("mainMenu");
+  if (x.className === "main-menu") {
+    x.className += " responsive";
+  } else {
+    x.className = "main-menu";
+  }
+}
+	
+var size = 100;
+//寫一個變大函數
+function SizeToLarge(){
+        $("body").css("font-size","150%");
+}
+//中
+function SizeToNormal(){
+        $("body").css("font-size","");
+}
+//寫一個變小函數
+function SizeToSmall(){
+        $("body").css("font-size","50%");
+}
+</script>
+	
+</body>
+</html>

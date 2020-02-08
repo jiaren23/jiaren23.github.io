@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Project</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/css/project.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">
+      <span>Home</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button> 
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="about.html">About<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="exp.html">Experience</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="project.html">Project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+      </ul>
+    </div>
+  </nav>
+
+<div class="new-banner">
+  <img src="asset/img/ui.jpg" alt="">
+</div>  
+
+<section class="project-intr">
+  <div class="intr">
+     <h2>研究動機</h2>
+      <p>
+        迷路的人不僅讓家人心裡著急，甚至為了找尋這迷途者， 而需要動用到社會資源，且人口走失案件仍居高不下，結至107年10月份，仍有兩萬多起的失蹤案件 …等。
+            <br>社會事件層出不窮，時時佔據新聞版面，大眾人心惶惶、社會事件頻傳，手邊有個能引起旁人關注、嚇阻歹徒的工具也變得極為重要。
+      </p>
+  </div>
+  <div class="video">
+    <div class="ytbox">
+      <iframe class="yt" src="https://www.youtube.com/embed/mcJriCNY6iM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+
+    </div>
+  </div>
+</section>
+
+<div class="newpost">
+  <a href="#img1">
+    <img src="asset/img/new_post.jpg" class="thumbnail">
+</a>
+<a href="#_" class="lightbox" id="img1">
+    <img src="asset/img/new_post.jpg">
+</a>
+</div>
+
+<section class="pdfs">
+  <div class="pdf1">
+    <h3>Help Self 緊急求援 APP_企劃書</h3>
+    <embed src= "asset/img/Help Self 緊急求援 APP_企劃書.pdf" >    
+  </div>                
+  <div class="pdf2">
+    <h3>Help Self 緊急求援 APP_使用手冊</h3>
+    <embed src= "asset/img/Help Self 緊急求援 APP_使用手冊.pdf">
+  </div>
+</section>     
+
+<section class="pdfdownload">
+  <a href="asset/img/Help Self 緊急求援 APP_企劃書.pdf" download="Help Self 緊急求援 APP_企劃書.pdf">Help Self 緊急求援 APP_企劃書.pdf</a><br>
+  <a href="asset/img/Help Self 緊急求援 APP_使用手冊.pdf" download="Help Self 緊急求援 APP_使用手冊.pdf">Help Self 緊急求援 APP_使用手冊.pdf</a>
+</section>
+<section class="footer">
+  <h4>
+    Copyright © 2020 JiaRen
+  </h4>
+</section>
+ 
+<script>
+            function currentDiv(n) {
+              showDivs(slideIndex = n);
+            }
+
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("demo");
+              if (n > x.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" hover_img", "");
+              }
+              x[slideIndex-1].style.display = "block";
+              dots[slideIndex-1].className += " hover_img";
+            }
+            //------------------------
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+              showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              if (n > x.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              x[slideIndex-1].style.display = "block";  
+            }
+      </script>
+</body>
+</html>

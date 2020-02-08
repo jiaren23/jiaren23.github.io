@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+        text-align: center;
+        padding-bottom: 10px;
+        font-family: "微軟正黑體";
+    }
+   html{
+        width: 100%;     
+        background-color: #fff;
+    }
+    .banner .banner-pic{
+        width: 100%;
+    }
+    .chen-pic{
+        width: 50%;
+        margin: auto;
+    }
+    img{
+        width: 90%;
+    }
+    a{
+        color:#0075b4;
+    }
+    .col3-movableContent h4{
+        color: #E6780B;
+    }
+    .footer{
+        padding: 20px;
+        background-color: black;
+        color: white;
+    }
+    hr{
+        height: 3px;
+        background-color: #eee;
+        border:solid 1px #eee;
+    }
+@media screen and (min-width:768px){
+    *{
+        position: relative;
+    }
+    html{
+        background-color: #eee; 
+    }
+    body{
+        width:600px;
+        margin:auto ;  
+        background-color: #fff;
+    }
+    .logo{
+        width: 180px;
+        height: 50px;
+        left:50%;
+        transform:translateX(-50%);
+    }
+    .banner-pic{
+        width: 100%;
+    }
+    .talk{
+        display:flex;
+    }
+    .chen-pic{
+        width:20%;
+        margin: 0px 50px;
+        padding-top: 26px;
+    }
+    .chen-pic img{
+        width: 100px;
+    }
+    .chen-content{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+        padding: 0 20px;    
+    }
+    .movableContent{
+        margin-top: 10px;
+    }
+    .item .pic{
+        width:20%;
+        margin-right: 10px;
+    }
+    .item .content{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+        width: 100%;
+    }
+    a{
+        text-align:right; 
+        color:#0075b4;
+    }
+    /*padding 10px*/
+    .head,.talk,.movableContent{
+    padding: 10px;
+    }
+    .item{
+    display:flex;
+    }
+    .item .pic{
+        width: 150px;
+    }
+    .item .pic img{
+        width: 150px;
+    }
+    h4{
+    margin-top: 0px;
+    }
+    h4,p,span{
+        text-align: left;
+    }
+    h3{
+        text-align: left;
+        font-size:30px ;
+    }
+    .col3-movableContent{
+        display:flex;
+    }
+    .col3-tittle{
+        text-align: center;
+    }
+    .col3-movableContent h4{
+        text-align: center;
+        color: #E6780B;
+    }
+    .col3-item{
+        width: 100%;
+        padding: 10px;    
+    }
+    .footer{
+        padding: 10px 30px;
+        width: 100%;
+        box-sizing: border-box; 
+    }
+    .footer h5 {
+        font-size:18px ;
+    }
+    .footer p{
+        font-size: 14px;
+        text-align: center;
+    }
+    hr{
+        height: 10px;
+        background-color: #eee;
+        border:solid 1px #eee;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <!-- logo + banner -->
+    <div class="head">
+        <div class="logo"><img src="http://www.mt.com.tw/wp-content/uploads/mt-logo-180-01-01.png" alt="Logo"
+                data-default="placeholder" data-max-width="300" data-max-height="100"></div>
+        <div class="banner"><img class="banner-pic" src="http://www.mt.com.tw/wp-content/uploads/2019-news-letter-banner-08.png"></div>
+    </div>
+    <!-- boss talk -->
+    <div class="talk">
+        <div class="chen-pic">
+            <img src="http://www.mt.com.tw/wp-content/uploads/william.png">
+            <img style="margin-top: 10px" src="http://www.mt.com.tw/wp-content/uploads/william-signature.png">
+        </div>
+        <div class="chen-content"><span><br>親愛的客戶及朋友：</span>
+            金豬報喜，孟華即將邁向第17個年頭。感恩有您的支持，我們才能持續穩健成長。值此新春佳節，謹祝福您闔家平安，「豬」事大吉！
+            <span style="text-align:left"><b><br>孟華科技 總經理陳威良暨全體同仁 敬賀</b></span></div>
+    </div>
+    <hr>
+    <!-- movable content -->
+    <div class="movableContent">
+        <h3 style="font-size: 30px">提供產業特定解決方案<span style="font-size: 16px"><br> On-premise & Cloud service</span></h3>
+        <div class="item">
+            <div class="pic"><img src="http://www.mt.com.tw/wp-content/uploads/solution-300-supervision.png" width="150"></div>
+            <div class="content">
+                <h4>營建工程管理</h4>
+                <p>符合公共工程管理模式，提供PCM、監造、統包的專案管理雲端服務整體解決方案</p><a target="_blank" href="http://www.mt.com.tw/solutions/solution_engineering/"
+                    class="link1">MORE</a>
+            </div>
+        </div>
+        <div class="item">
+            <div class="pic"><img src="http://www.mt.com.tw/wp-content/uploads/solution-300-product.png" width="150"></div>
+            <div class="content">
+                <h4>研發專案管理</h4>
+                <p>整合進度、產出、與人力資源管理，強化需求與變更管理</p><a target="_blank" href="http://www.mt.com.tw/solutions/solution_development/"
+                    class="link1">MORE</a>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- 3col  movable content -->
+    <h3 class="col3-tittle">產品技術持續升級</h3>
+    <div class="col3-movableContent">
+        <div class="col3-item">
+            <div class="pic"><img src="http://www.mt.com.tw/wp-content/uploads/solution-300-supervision.png" width="150"></div>
+            <div class="content">
+                <h4>大數據分析</h4>
+                <p><a href="http://www.mt.com.tw/products/edashboard/" target="_blank">eDashboard™ </a>全新改版，將專案資料轉為決策分析的利器</p><br><a
+                    target="_blank" href="http://www.mt.com.tw/solutions/solution_engineering/" class="link1">MORE</a>
+            </div>
+        </div>
+        <div class="col3-item">
+            <div class="pic"><img src="http://www.mt.com.tw/wp-content/uploads/solution-300-supervision.png" width="150"></div>
+            <div class="content">
+                <h4>追蹤與追溯</h4>
+                <p>強化追蹤與追溯 <span style="font-size: 14px;">(Tracking and Traceability)</span>管理，有效掌握事件的來龍去脈，進行根因分析</p><a
+                    target="_blank" href="http://www.mt.com.tw/solutions/solution_engineering/" class="link1">MORE</a>
+            </div>
+        </div>
+        <div class="col3-item">
+            <div class="pic"><img src="http://www.mt.com.tw/wp-content/uploads/solution-300-supervision.png" width="150"></div>
+            <div class="content">
+                <h4>易用性優化</h4>
+                <p>整合來自客戶與市場的管理需求，於2018年共升級5次，未來也將持續優化</p><a target="_blank" href="http://www.mt.com.tw/solutions/solution_engineering/"
+                    class="link1">MORE</a>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <h5>想了解更多資訊，歡迎聯絡我們 Tel：07-7279337</h5>
+        <p>如若您不想收到本封電子報，或有任何疑問、心得 、建議，都歡迎您<a href="http://www.mt.com.tw/about/contactus/">來信</a>通知我們</p>
+        <div class="copyright">Copyright © 2019 孟華科技股份有限公司. 版權所有.</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+                
+            * {
+            position: relative;
+            font-family: 微軟正黑體;
+            vertical-align: top;
+            }
+
+            html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: #222;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            }
+
+            .phone {
+            width: 250px;
+            padding: 10px;
+            background-color: #eee;
+            border-radius: 10px;
+            transition-duration: 0.5s;
+            left: 0px;
+            }
+
+            .top {
+            height: 40px;
+            }
+            .top .camera {
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            background-color: black;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            }
+
+            .screen {
+            height: 350px;
+            transition-duration: 0.5s;
+            overflow: hidden;
+            cursor: pointer;
+            }
+            .screen .pages {
+            background-color: #333;
+            width: 100%;
+            height: 100%;
+            white-space: nowrap;
+            font-size: 0px;
+            transition: 0.5s;
+            left: 0px;
+            }
+            .screen .pages .page {
+            display: inline-block;
+            background-color: #333;
+            width: 100%;
+            height: 100%;
+            font-size: initial;
+            white-space: normal;
+            padding: 10px;
+            box-sizing: border-box;
+            position: relative;
+            font-size: 12px;
+            color: #eee;
+            }
+            .screen .pages .page p {
+            margin-top: 30px;
+            }
+            .screen .pages .page h2 {
+            color: #fff;
+            font-size: 20px;
+            margin: 0;
+            }
+            .screen .pages .page:before {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            content: "";
+            display: block;
+            background-color: #ffab36;
+            width: 100%;
+            height: 60px;
+            }
+            .screen .pages .page:after {
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            content: "";
+            display: block;
+            background-color: #ffab36;
+            width: 100%;
+            height: 20px;
+            }
+            .screen .pages .page1 {
+            background-color: #FFab36;
+            color: #eee;
+            }
+            .screen .pages .page1 h2 {
+            font-size: 20px;
+            margin-bottom: 0;
+            }
+            .screen .pages .page1 h1 {
+            font-size: 30px;
+            margin-top: 0;
+            }
+            .screen .pages .page1 .orange {
+            width: 300px;
+            height: 300px;
+            background-color: #ff9e17;
+            border-radius: 100%;
+            }
+
+            .bottom {
+            height: 60px;
+            }
+            .bottom .button {
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            font-size: 25px;
+            text-align: center;
+            color: rgba(0, 0, 0, 0.4);
+            border: solid 1px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            }
+            .bottom .button:hover {
+            background-color: #ddd;
+            }
+
+            .status, .phonename {
+            color: white;
+            margin: 0;
+            }
+
+            .status {
+            margin-top: 20px;
+            font-size: 15px;
+            }
+
+            .phonename {
+            margin: 10px;
+            }
+
+            .buttons button {
+            background-color: transparent;
+            border: solid 1px rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 5px 13px;
+            border-radius: 5px;
+            cursor: pointer;
+            }
+            .buttons button:hover {
+            background-color: #fff;
+            color: #333;
+            }
+
+    </style>
+
+</head>
+<body>
+    
+<div class="phone">
+        <div class="top">
+          <div class="camera"></div>
+        </div>
+        <div class="screen">
+          <div class="pages">
+            <div class="page page1">
+              <h2>Orange</h2>
+              <h1>橘</h1>
+              <p>Lorem ipsum doloExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <div class="orange"></div>
+            </div>
+            <div class="page page2">
+              <h2>page2</h2>
+              <p>Lorem ipsum doloExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="page page3">
+              <h2>page3</h2>
+              <p>Lorem ipsum doloExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+        </div>
+        <div class="bottom"> 
+          <div class="button">☐</div>
+        </div>
+      </div>
+      <h3 class="status">The "Best" iphone we've ever made !</h3>
+      <h2 class="phonename">iphone 5s</h2>
+      <div class="buttons">
+        <button class="i5">iphone5         </button>
+        <button class="i5s">iphone5s</button>
+        <button class="i6">iphone6</button>
+        <button class="i6s">iphone6+</button>
+        <button class="wiggle">wiggle</button>
+        <button class="turn">tren around</button>
+      </div>
+
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script>
+            var button_audio=new Audio("http://www.monoame.com/awi_class/ballsound/click14.wav");
+
+            $(".i5").click(
+            function(){
+            $(".phone").css("width","");  //按回i5後將寬度值給空職值即可去除
+            $(".screen").css("height","");
+            $(".phonename").text($(this).text()); //直接抓取當下按小的按鈕文字 (也可自行輸入文字)
+            button_audio.play();
+            }
+            );
+
+            $(".i5s").click(
+            function(){
+            $(".phone").css("width","250px");  //調整寬度
+            $(".screen").css("height","420px");  //調整高度
+            $(".phonename").text($(this).text()); //直接抓取當下按小的按鈕文字 (也可自行輸入文字)
+            button_audio.play();
+            }
+            );
+
+            $(".i6").click(
+            function(){
+            $(".phone").css("width","270px");  //調整寬度
+            $(".screen").css("height","440px");  //調整高度
+            $(".phonename").text($(this).text()); //直接抓取當下按小的按鈕文字 (也可自行輸入文字)
+            button_audio.play();
+            }
+            );
+
+            $(".i6s").click(
+            function(){
+            $(".phone").css("width","300px");  //調整寬度
+            $(".screen").css("height","480px");  //調整高度
+            $(".phonename").text($(this).text()); //直接抓取當下按小的按鈕文字 (也可自行輸入文字)
+            button_audio.play();
+            }
+            );
+
+            var screen_audio=new Audio("http://www.monoame.com/awi_class/ballsound/click18.wav");
+
+            var page=0;
+            $(".screen").click(
+            function(){
+                page=page+1;
+                if (page>2){
+                page=0;
+                }
+                $(".pages").css("left","-"+page*100+"%");
+                screen_audio.play();
+            }
+            );
+
+            // home建
+            var home_audio=new Audio("http://www.monoame.com/awi_class/ballsound/click23.wav");
+
+            $(".button").click(
+            function (){
+                page=0;
+                $(".pages").css("left","-"+page*100+"%");
+                home_audio.play();
+            }
+            );
+
+            $(".turn").click(
+            function (){
+                $(".phone").css("transform","rotate(360deg)");
+            }
+            );
+
+            var wiggle_audio=new Audio("http://www.monoame.com/awi_class/ballsound/phonevi.mp3");
+
+            $(".wiggle").click(
+            function (){
+                wiggletime=0;
+                wiggle_audio.play();
+            }
+            );
+
+
+            var wiggletime=0;
+            setInterval(
+            function(){
+                if (wiggletime<=20){
+                wiggletime++;
+                console.log(wiggletime);
+                if (wiggletime%2==0){
+                    $(".phone").css("left","-30px");
+                }else{
+                    $(".phone").css("left","30px"); 
+                }
+                if (wiggletime==21){
+                $(".phone").css("left",""); 
+                }
+            }
+            }
+            ,60);
+                
+      </script>
+
+</body>
+</html>

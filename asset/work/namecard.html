@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+                *{
+                font-family: 微軟正黑體;
+                position:relative;
+                }
+                html,body{
+                width: 100%; height: 100%;
+                padding: 0; margin: 0;  
+                }
+                body{
+                background-color: #d1d1d1;
+                }
+                .namecard{
+                width: 350px;
+                height: 200px;
+                padding: 20px;
+                margin-left:50px;
+                margin-top: 100px;
+                background-color: #eee;
+                letter-spacing:1px;
+                font-weight: 500;/*100為單位 */
+                color:rgba(0,0,0,0.8);
+                border-radius:10px;
+                border:solid 1px rgba(0,0,0,0.15);
+                box-shadow:10px 10px 15px rgba(0,0,0,0.35);
+                overflow:hidden;
+                margin: auto;
+                top: 50%;
+                transform:translateY(-50%);
+                }
+                .namecard h3{
+                font-size: 25px;
+                font-weight: 500;
+                }
+                .namecard h3 span{
+                font-size: 17px;
+                }
+                .namecard h4{
+                color: red;
+                }
+                .namecard p{
+                font-size: 12px;
+                line-height: 22px;
+                }
+                .circle{
+                width: 100px;
+                height: 100px;
+                border-radius:100%;
+                position:absolute;
+                }
+                .circle1{
+                    right:100px;
+                    border:solid black;
+                    background-color:red;  
+                    left:50px;  bottom:-78px;
+                }
+                .circle2{
+                width: 150px;  height: 150px;
+                right:-50px;  top:-50px;
+                border:solid 3px ;
+                background-color: #fff;
+                }
+                .bgc {
+                font-size: 50px;
+                z-index:-20;
+                opacity:0.1;
+                text-align: center;
+                top: -10%;
+                left: -20%;
+                }
+    
+    </style>
+
+
+</head>
+<body>
+    <div class="namecard">
+        <h3 class="title">JiaRen<span>&nbsp;   Leon</span></h3>
+        <h4>孟華科技-網頁設計實習</h4>
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ut molestias corporis,</p>
+        <div class="circle circle1"></div>
+        <div class="circle circle2"></div>
+      </div>
+      <div class="bgc">
+        NAME CARD
+      </div>
+</body>
+</html>

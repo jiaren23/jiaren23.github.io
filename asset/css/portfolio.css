@@ -1,0 +1,154 @@
+*{
+    position: relative;  
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: 'Noto Serif TC', serif;
+}
+a{
+    color:rgb(116, 108, 108) !important;
+}
+.bg-dark{
+   
+    background: rgb(226, 220, 220) !important;
+}
+.nav-link {
+    padding-right: 0;
+    padding-left: 0;
+    text-align: center;
+}
+img{
+    width: 100%;
+    /* border-radius: 100%; */
+}
+
+.head{
+    background-image: url("../img/banner.png");
+    text-align: center;
+    margin: auto;
+    height:30vh;
+    /* Create the parallax scrolling effect */
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+h5{
+    color: rgb(78, 74, 74);
+    font-weight: 600;
+}
+
+h3{
+    margin: 40px auto;
+}
+
+.web-box-img{
+    margin-bottom: 10px;
+}
+
+.web-box{    
+    padding: 20px;
+    width: 100%;
+    /* height: 200px; */
+    text-align: center;
+    /* background-color: #eee; */
+    border: solid 1px rgb(199, 193, 193);
+    margin: 10px auto;
+    border-radius: 10px;
+    }
+
+
+
+.design-work{
+    /* background-color: rgb(224, 224, 224); */
+    background-image: url(../../asset/img/new_bgc.jpg);
+    width: 100%;
+    margin:20px auto;
+    padding: 10px 10px 30px;
+}
+.design-box a{
+    border: solid 1px #666;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* contact arrow */
+.btn .arrow{
+    animation: arrow 2s infinite;
+}
+@keyframes arrow{
+    0%{
+        opacity: 0.5;
+        
+    }
+    50%{
+        opacity: 1;
+        left: 5px;
+    }
+    100%{
+        opacity: 0.5;
+       
+    }
+}
+
+
+@media screen and (min-width:768px){
+    .head{
+        background-image: url("../img/banner.png");
+        /* margin-top: 80px; */
+        /* padding: 50px; */
+        text-align: center;
+        margin: auto;
+        height:70vh;
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .web-work{
+        display: flex;
+        max-width: 960px;
+        margin: auto;
+    }
+    .web-box{    
+    padding: 20px;
+    width: 360px;
+    text-align: center;
+    /* background-color: #eee; */
+    border: solid 1px rgb(199, 193, 193);
+    margin: 10px;
+    border-radius: 10px;
+    }
+
+    .web-box .box-img img{
+       width: 200px;
+    }
+    .web-box-img{
+        margin-bottom: 10px;
+    }
+
+    .design-work .design-box{
+        margin: auto;
+        max-width: 960px;;
+    }
+
+   
+    .footer{
+        margin:50px auto 15px
+    }
+
+    
+}
+
+@media screen and (max-width: 960px){
+    section {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+  
+
+  }

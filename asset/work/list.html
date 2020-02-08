@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<style>
+    * {
+  position: relative;
+  font-family: 微軟正黑體;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#buylist {
+  display: inline-block;
+  padding: 20px;
+  background-color: #ddd;
+  border-radius: 10px;
+}
+
+h1 {
+  padding: 20px;
+  margin-top: -20px;
+  margin-left: -20px;
+  margin-right: -20px;
+  background-color: #7db9de;
+}
+
+#item_list {
+  margin-top: 10px;
+  padding: 5px;
+}
+
+.buy_item {
+  padding: 5px;
+  list-style: none;
+  border: solid 3px;
+  margin-top: 10px;
+  font-weight: 900;
+}
+.buy_item input {
+  width: 100px;
+  border: 3px;
+}
+.buy_item .price {
+  display: inline-block;
+  position: absolute;
+  padding-left: 8px;
+  padding-right: 8px;
+  right: 50px;
+}
+.buy_item .price::before {
+  content: "$";
+}
+.buy_item .del_btn {
+  padding: 0px 6px;
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  background-color: #c73e3a;
+  border-radius: 5px;
+  color: #fff;
+}
+.buy_item .del_btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+.buy_item .addbtn {
+  cursor: pointer;
+  margin-left: 10px;
+  padding: 3px;
+  background-color: #ffba84;
+  border-radius: 5px;
+}
+.buy_item .addbtn:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+</style>
+
+</head>
+<body>
+        <div id="buylist">
+          <h1>我的購物清單</h1>
+          <div class="buy_item">
+            <label>產品名</label>
+            <input id="input_name"/>
+            <label>價錢</label>
+            <input id="input_price"/><span class="addbtn">+新增</span>
+          </div>
+          <div id="items_list"></div>
+        </div>
+    
+
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+                    var shoplist={};
+                    shoplist.name="MyBuylist 購物清單";
+                    shoplist.time="2016/09/10";
+                    shoplist.list=[]; //使其一開始為空
+
+                    /*
+                    <li class="buy_item" id="id">1.吹風機
+                    <div class="price">100</div>
+                    <div class="del_btn">X</div>
+                    </li>
+                    */
+                    var item_html="<li id={{id}} class='buy_item'>{{num}}. {{item}}<div class='price'>{{price}}</div><div id={{del_id}} data-delid={{del_item_id}} class='del_btn'>X</div></li>";
+
+                    /* 
+                    <li class="buy_item total">總價
+                        <div class="price">500</div>
+                    </li>
+                    */
+                    var total_html="<li class='buy_item total'>總價<div class='price'>{{price}}</div></li>";
+
+                    function showlist() {
+                    $("#items_list").html(""); //原先如果不加這行會在每次新增資料進去時會重複的產生每一筆資料再加進去 ， 因此這行可以統一在每次要加資料進去時都先把資料刪除
+                        var total_price=0;
+                        for (var i=0;i<shoplist.list.length;i++){
+                        var item=shoplist.list[i];
+                        var del_item_id="del_buyitem_"+i;
+                        total_price=total_price+parseInt(item.price);     //此處item.price即為shoplist.list裡面的price     ，加上parseInt將其改為數字
+                                                                            // 等同於 total_price=total_price+shoplist.list[i].price; 
+                        
+                        var current_item_html= 
+                            item_html.replace("{{num}}",i+1)               //replace(原始東西,修改後)
+                                    .replace("{{item}}",item.name)
+                                    .replace("{{id}}","buyitem_"+i)
+                                    .replace("{{del_id}}",del_item_id)
+                                    .replace("{{price}}",item.price)     
+                                    .replace("{{del_item_id}}",i)
+                        ;
+                        $("#items_list").append(current_item_html);
+                        $("#"+del_item_id).click(
+                            function(){
+                                remove_item(parseInt($(this).attr("data-delid")));
+                            }
+                        );  
+                        } 
+                    
+                        var current_total_html=
+                            total_html.replace("{{price}}",total_price);
+                        $("#items_list").append(current_total_html); 
+                    }
+
+                    showlist();  //執行此showlist 函式 
+
+
+
+                    $(".addbtn").click(
+                    function(){
+                        shoplist.list.push(                //push資料進去
+                        {
+                            name:$("#input_name").val(),     
+                            price:$("#input_price").val()
+                        }
+                        );
+                        $("#input_name").val("");            //此處是在push資料進去後馬上讓input視窗為空值
+                        $("#input_price").val("");
+                        showlist();
+                    }
+                    );
+
+
+                    function remove_item(id){
+                    shoplist.list.splice(id,1);
+                    showlist();
+                    }
+                    
+  
+        </script>
+</body>
+</html>
