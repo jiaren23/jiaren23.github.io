@@ -93,6 +93,12 @@ h3{
        
     }
 }
+  
+.footer h4{
+    margin: 50px auto 15px;
+    font-size: 14px;
+
+}
 
 
 @media screen and (min-width:768px){
@@ -137,12 +143,7 @@ h3{
         max-width: 960px;;
     }
 
-   
-    .footer h4{
-        margin: 50px auto 15px;
-        font-size: 14px;
-    
-    }
+ 
     
 
     
