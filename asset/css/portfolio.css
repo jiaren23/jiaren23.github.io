@@ -76,7 +76,7 @@ h3{
 }
 
 /* contact arrow */
-.btn .arrow{
+.arrow{
     animation: arrow 2s infinite;
 }
 @keyframes arrow{
