@@ -26,6 +26,10 @@ img{
     border-radius: 100%;
 }
 
+h5{
+    color:#948073;
+    font-weight: 600;
+}
 .pic{
     display: inline-block;  
 }
@@ -41,6 +45,9 @@ img{
     border-radius: 5px;
     padding: 5px;
    
+}
+.skill p{
+    color:#343a40;
 }
 .footer h4{
     margin: 50px auto 15px;

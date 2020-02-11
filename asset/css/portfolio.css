@@ -11,6 +11,9 @@
 a{
     color:rgb(116, 108, 108) !important;
 }
+.web-box a{
+    color:#343a40 !important;
+}
 .bg-dark{
    
     background: rgb(226, 220, 220) !important;
@@ -22,7 +25,6 @@ a{
 }
 img{
     width: 100%;
-    /* border-radius: 100%; */
 }
 
 .head{
@@ -30,14 +32,12 @@ img{
     text-align: center;
     margin: auto;
     height:30vh;
-    /* Create the parallax scrolling effect */
-    /* background-attachment: fixed; */
     background-position: center;
     background-repeat: no-repeat;
     background-size:cover;
 }
 h5{
-    color: rgb(78, 74, 74);
+    color:#948073;
     font-weight: 600;
 }
 
@@ -52,9 +52,7 @@ h3{
 .web-box{    
     padding: 20px;
     width: 100%;
-    /* height: 200px; */
     text-align: center;
-    /* background-color: #eee; */
     border: solid 1px rgb(199, 193, 193);
     margin: 10px auto;
     border-radius: 10px;
@@ -78,6 +76,7 @@ h3{
 /* contact arrow */
 .arrow{
     animation: arrow 2s infinite;
+    color:rgb(116, 108, 108) !important;
 }
 @keyframes arrow{
     0%{
@@ -142,11 +141,7 @@ h3{
         margin: auto;
         max-width: 960px;;
     }
-
- 
-    
-
-    
+  
 }
 
 @media screen and (max-width: 960px){
