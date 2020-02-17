@@ -51,14 +51,12 @@
                 
               }
           }
-
           @media screen and (max-width:768) {
             .touch{
               padding-left: 10px;
               padding-right: 10px;
             }
-          }
-          
+          }         
 </style>
 </head>
 <body>
@@ -75,7 +73,7 @@
           <a class="nav-link" href="about.html">About<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="exp.html">Exp</a>
+          <a class="nav-link" href="exp.html">Experience</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="portfolio.html">Portfolio</a>
@@ -102,7 +100,7 @@
             <input id="nameText" type="text" name="Name"  value size="60" placeholder="姓名(name)" required>  <!-- required 必填欄位 ，placeholder 預設內容--> 
         </div>
         <div class="input-mes">
-            <input id="emailText" type="email" name="Email"  value size="60" placeholder="Email" required> 
+            <input id="emailText" type="email" name="Email"  value size="60" placeholder="電子信箱(Email)" required> 
         </div>
         <div class="input-mes">
             <input id="telText"type="tel" name="Phone"  value size="60" aria-invalid="false" placeholder="電話(phone)" required>
@@ -110,7 +108,7 @@
         <div class="input-mes">
             <input  id="subText" type="text" name="Subject"  value size="60" aria-invalid="false" placeholder="主旨(subject)" required>
         </div>
-        <textarea id="bodyText" name="your-message" cols="40" rows="10"  aria-required="true" aria-invalid="false" placeholder="你的訊息(Your Message)" required></textarea>   
+        <textarea id="bodyText" name="your-message" cols="40" rows="10"  aria-required="true" aria-invalid="false" placeholder="您的訊息(Your Message)" required></textarea>   
          <div class="input-mes">
              <input type="button" class="send" value="啟用 Mail 送出訊息" onclick="submitHandler();">
              <a id="mailTo"></a>
