@@ -31,7 +31,9 @@
     max-width: 100%;
   }
   
-  
+  .intr p{
+    text-align: left;
+  } 
   
   
   .newpost{
