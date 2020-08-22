@@ -14,6 +14,25 @@ nav{
     letter-spacing: 0.1em;
 }
 
+/* contact arrow */
+.arrow{
+    animation: arrow 2s infinite;
+}
+@keyframes arrow{
+    0%{
+        opacity: 0.5;
+        
+    }
+    50%{
+        opacity: 1;
+        left: 5px;
+    }
+    100%{
+        opacity: 0.5;
+       
+    }
+}
+
 /* 螢幕大於576*/
 @media (min-width:576px){
     
@@ -179,6 +198,16 @@ img{
     padding: 5px;
     color: rgb(77, 73, 73);
 }
+.click{
+    position: absolute;
+    display: inline-block;;
+    left:10%;
+    top:110%;
+    font-size: 20px;
+    background-color: #eee;
+    border-radius:3px;
+    padding: 2px;
+}
 
 
 
@@ -288,6 +317,14 @@ img{
     margin-top: 10%;
     left: 30%;
     color: rgb(77, 73, 73);
+}
+.click{
+    display: inline-block;
+    margin-top: 30%;
+    left: 20%;
+    background-color: #eee;
+    border-radius:3px;
+    padding: 2px;
 }
 
 .head-top,.head-left,.head-bottom,.head-right{
