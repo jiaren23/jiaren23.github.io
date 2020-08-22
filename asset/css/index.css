@@ -173,7 +173,7 @@ img{
 }
 .intr{
     position: absolute;
-    display: inline-block;;
+    display: inline-block;
     left:-35%;
     top:-30%;
 }
@@ -200,7 +200,7 @@ img{
 }
 .click{
     position: absolute;
-    display: inline-block;;
+    display: inline-block;
     left:10%;
     top:110%;
     font-size: 20px;
